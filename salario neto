@@ -1,0 +1,24 @@
+// Salario de un empleado.cpp : Defines the entry point for the console application.
+//Autor: Miguel Castro Pinto Salvago
+//Fecha: 18/03/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+
+int main ()
+{
+	float sb,afp,iva,sn;
+	cout<<"ingrese sb: ";
+    cin>> sb;
+    afp=0.12;
+    iva=0.13;
+    if (sb>2800)
+      sn=sb-(sb*afp)-(sb*iva);
+	  cout<<sn;
+	if (sn<2800)
+      sn=sb-(sb*afp);
+	  cout<<sn;
