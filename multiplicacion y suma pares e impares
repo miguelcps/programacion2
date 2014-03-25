@@ -1,0 +1,25 @@
+// pares e impares 2.cpp : Defines the entry point for the console application.
+//Autor: Miguel Castro Pinto Salvago
+//Fecha: 25/03/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void main ()
+{int num1, num2, res;
+cout<<"ingrese el primer numero: ";
+cin>>num1;
+cout<<"ingrese el segundo numero: ";
+cin>>num2;
+if((num1%2!=0)
+   &&(num2%2!=0))
+   res=num1+num2;
+else
+	res=num1*num2;
+cout<<"el resultado final es: "<< res;
+getch();
+}
+
