@@ -1,0 +1,50 @@
+// Menu de suma, resta, etc.cpp : Defines the entry point for the console application.
+//Nombre:Miguel Castro Pinto salvago
+//Fecha: 15/04/2014
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{
+	int a, b , suma, multiplicacion, resta, operacion;
+	float division;
+	cout<<"ingrese a: ";
+	cin>>a;
+	cout<<"ingrese b: ";
+	cin>>b;
+	do
+	{
+	cout<<"\n 1.suma \n";
+	cout<<"2.resta \n";
+	cout<<"3.multiplicacion \n";
+	cout<<"4.division \n";
+	cout<<"5.salir \n";
+	cin>>operacion;
+	if(operacion==1)
+	{suma=a+b;
+	cout<<"\n\nla suma es: "<<suma;
+	}
+	else if(operacion==2)
+	{resta==a-b;
+	cout<<"\n\nla resta es: "<<resta;
+	}
+	else if(operacion==3)
+	{multiplicacion=a*b;
+	cout<<"\n\nla multiplicacion es: "<<multiplicacion;
+	}
+	else if(operacion==4)
+	{division=a/b;
+	cout<<"\n\nla division es: "<<division;
+	}
+	}
+	while(operacion!=5);
+
+}
+
+
+
