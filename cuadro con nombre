@@ -11,12 +11,12 @@ using namespace std;
 void main()
 {
 	char letra;
-	int i,numeroletra=28;
+	int i,numeroletra=32;
 	letra='*';
 	for (i=0; i<=numeroletra;i++)
 		cout<<letra;
 	cout<<"\n";
-	cout<<"* \t Me llamo Miguel    *";
+	cout<<"* \t Me llamo Miguel        *";
 	cout<<"\n";
 	for (i=0;i<=numeroletra;i++)
 		cout<<letra;
