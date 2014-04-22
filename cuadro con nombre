@@ -1,0 +1,25 @@
+// Cuadro con nombre.cpp : Defines the entry point for the console application.
+//Nombre: Miguel Castro Pinto Salvago
+//Fecha: 22/04/14
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{
+	char letra;
+	int i,numeroletra=28;
+	letra='*';
+	for (i=0; i<=numeroletra;i++)
+		cout<<letra;
+	cout<<"\n";
+	cout<<"* \t Me llamo Miguel    *";
+	cout<<"\n";
+	for (i=0;i<=numeroletra;i++)
+		cout<<letra;
+	cout<<"\n";
+	getch();
+}
