@@ -1,0 +1,41 @@
+// combinatoria.cpp : Defines the entry point for the console application.
+//Name:Miguel Castro Pinto Salvago
+//Fecha:13/05/14
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+float combi(int n,int r);
+int fac(int n);
+
+void main()
+{
+int n,r,i;
+float c;
+cout<<"Ingrese el valor de N: ";
+cin>>n;
+cout<<"Ingrese el valor de R: ";
+cin>>r;
+c=combi(n,r);
+cout<<"La combinatoria es igual a: "<<c;
+getch();
+}
+
+
+int fac(int numero)
+{
+    int f=1;
+    for(int i=1;i<=numero;i++)
+        f=f*i;
+    return f;
+}
+
+float combi (int n,int r)
+{
+int c;
+
+c= fac(n)/(fac(r)*fac(n-r));
+    return c;
+}
