@@ -1,0 +1,36 @@
+// valor binario.cpp : Defines the entry point for the console application.
+//ejercicio:conversor//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+using namespace std;
+
+int conversor(int x);
+void main()
+{
+	int n;
+	int dec;
+	{
+		cout<<"ingrese el valor binario: ";
+	cin>>n;
+	dec=conversor(n);
+	cout<<n<<" En decimal es: "<<dec;
+    getch();
+	}
+}
+int conversor(int x)
+{
+	int i=1,suma=0,dig;
+	{
+	while(x>0)
+	{
+		dig=x%10;
+        x=x/10;
+      suma=suma+pow(2.0,(i-1))*dig;
+	  i=i+1;
+	}
+}
+return suma;
+}
