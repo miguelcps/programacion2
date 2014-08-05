@@ -27,9 +27,18 @@ int division (int t, int u){
 	}
 	return(s);
 }
+
+int factorial (int a) {
+	int w=1, i, con=a;
+	for (i=0;i<a;i++)
+	{w=w*con;
+	con=con-1;
+	}
+	return (w);
+}
 int main()
 {
-	int a,b,r,m,d;
+	int a,b,r,m,d,f;
 	cout<< "introducir un numero: ";
 	cin>> a;
 	cout << "introducir otro numero: ";
@@ -37,9 +46,11 @@ int main()
 	r=suma(a,b);
 	m=producto(a,b);
     d=division (a,b);
+	f=factorial (a);
 	cout<< "La suma es -->> : " << r;
 	cout<< "\nLa multipliccion es -->> : " << m;
 	cout<< "\nLa division es -->> : " << d;
+	cout<< "\nEl factorial es -->> : " << f;
 	getch();
 	return (1);
 }
