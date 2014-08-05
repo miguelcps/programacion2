@@ -1,0 +1,45 @@
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int suma (int x, int y){
+	int z;
+	z=x+y;
+	return (z);
+}
+int producto ( int p, int q){
+	int mult, i;
+	mult=0;
+	i=1;
+	while (i<=q)
+	{mult=mult+p;
+	i=i+1;
+	}
+	return (mult);
+}
+
+int division (int t, int u){
+	int i, s=0;
+	while (t!=0)
+	{
+	t=t-u;
+	s++;
+	}
+	return(s);
+}
+int main()
+{
+	int a,b,r,m,d;
+	cout<< "introducir un numero: ";
+	cin>> a;
+	cout << "introducir otro numero: ";
+	cin>>b;
+	r=suma(a,b);
+	m=producto(a,b);
+    d=division (a,b);
+	cout<< "La suma es -->> : " << r;
+	cout<< "\nLa multipliccion es -->> : " << m;
+	cout<< "\nLa division es -->> : " << d;
+	getch();
+	return (1);
+}
